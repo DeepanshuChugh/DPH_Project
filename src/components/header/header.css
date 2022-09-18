@@ -11,6 +11,9 @@
   max-width: 1024px;
   margin: 20px 0px 100px 0px;
 }
+.headerListMode {
+  margin: 20px 0px 0px 0px;
+}
 .headerList {
   display: flex;
   gap: 40px;
@@ -76,6 +79,7 @@
   top: 60px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   /* left: 10px; */
+  z-index: 2;
 }
 ::placeholder {
   color: black;
@@ -90,6 +94,7 @@
   color: gray;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   height: 15rem;
+  z-index: 2;
 }
 .optionItem {
   width: 24rem;
@@ -130,4 +135,9 @@
   color: black;
   font-weight: 500;
   margin-left: 2rem;
+}
+
+.inc:disabled,
+.dec:disabled {
+  cursor: not-allowed;
 }
